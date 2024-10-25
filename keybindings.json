@@ -1,0 +1,17 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+l",
+        "command": "settings.cycle.lineNumbers",
+        // "when": "editorFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "settings.cycle.statusBar",
+        // "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "editor.action.toggleMinimap"
+    }
+]

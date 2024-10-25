@@ -1,0 +1,207 @@
+{
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 250000,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 5,
+    "editor.overviewRulerBorder": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "Zed Mono",
+    "editor.fontWeight": "800",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+    // When I accidentally hit copy without selecting anything and it overrides my clipboard - ugh.
+    "editor.emptySelectionClipboard": false, 
+
+    // Give it to me as fast as you have it.
+    "editor.quickSuggestionsDelay": 0, 
+
+    // In sublime I got used to almost exclusively using "cmd+shift+v" (format on paste) - now it will do it by default!
+    "editor.formatOnPaste": true, 
+    "disableLigatures.mode": "Cursor",
+    "editor.lineHeight": 1.8,
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.ignoreRecommendations": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.scale": 1,
+    "editor.minimap.maxColumn": 80,
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.filePath": "last",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.symbolPath": "last",
+    "breadcrumbs.icons": true,
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+    "window.nativeTabs": true,
+    
+    "dart.lineLength": 200,
+    "[dart]": {
+        "editor.rulers": [
+            200
+        ],
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    // "css.validate": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.accessibilitySupport": "auto",
+
+    /*
+    * configure my custome vscode css and js
+    */
+    "vscode_custom_css.imports": [
+        "file:///Users/godswill_azubike/custom-vscode.css",
+        "file:///Users/godswill_azubike/custom-vscode.js"
+    ],
+
+    /*
+    * configure settings cycle
+    * extension to toggle between line numbers, status bar, 
+    */
+    "settings.cycle": [
+        {
+            "id": "lineNumbers",
+            "values": [
+                {
+                    "editor.lineNumbers": "off",
+                    "editor.folding": false
+                },
+                {
+                    "editor.lineNumbers": "on",
+                    "editor.folding": true
+                }
+            ]
+        },
+        {
+            "id": "statusBar",
+            "values": [
+                {
+                    "workbench.statusBar.visible": false
+                },
+                {
+                    "workbench.statusBar.visible": true
+                }
+            ]
+        }
+    ],
+    "editor.folding": false,
+    "editor.stickyScroll.enabled": false,
+    "workbench.editorAssociations": {
+        "*.sqlite": "default",
+        "*.woff": "default",
+        "*.mmdb": "default",
+        "*.svg": "default"
+    },
+    "git.autofetch": true,
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.stickyScroll.maxLineCount": 1,
+    "workbench.tree.stickyScrollMaxItemCount": 1,
+    "workbench.tree.enableStickyScroll": false,
+    "editor.linkedEditing": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.statusBar.visible": true,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontFamily": "Zed Mono",
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.guides.indentation": true,
+    "cSpell.enableFiletypes": [
+        "dart"
+    ],
+    "explorer.compactFolders": false,
+    "redhat.telemetry.enabled": true,
+    "editor.renderLineHighlight": "none",
+    "dart.hotReloadOnSave": "all",
+    "dart.flutterHotReloadOnSave": "all",
+    "editor.lineNumbers": "off",
+    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "right",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+        "*.dart": "${capture}.g.dart",
+        "composer.json": "composer.lock",
+        "psalm.xml": "psalm-baseline.xml",
+        ".php-cs-fixer.php": ".php-cs-fixer.cache",
+        "phpunit.xml": ".phpunit.result.cache",
+        "*.php": "${basename}Test.php"
+    },
+    "emmet.includeLanguages": {
+        "blade.php": "html",
+        "twig": "html"
+    },
+    "files.associations": {
+        ".php_cs.dist": "php",
+        ".php_cs": "php",
+        ".pre": "php",
+        "artisan": "php"
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "_ide_helper.php": true,
+        "_ide_helper_models.php": true,
+        ".php_cs.cache": true,
+        ".phpstorm.meta.php": true,
+        ".phpunit.result.cache": true
+    },
+    "Devdb.colorTheme": "dark",
+    "workbench.editor.showTabs": "none",
+    "codeium.enableCodeLens": false,
+    "workbench.colorTheme": "Nord",
+    "editor.minimap.enabled": false
+}
