@@ -13,5 +13,25 @@
     {
         "key": "ctrl+m",
         "command": "editor.action.toggleMinimap"
+    },
+    {
+        "key": "ctrl+n", // "cmd+n" on mac
+        "command": "extension.advancedNewFile",
+    },
+    {
+        "key": "alt+d",
+        "command": "devdb.focus"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "-devdb.focus"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "phpCreateClass.createClass"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "workbench.view.extension.codexViewContainer"
     }
 ]

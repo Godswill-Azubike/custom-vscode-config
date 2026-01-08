@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Wait for the command palette to be loaded.
   const checkElement = setInterval(() => {
     const commandDialog = document.querySelector(".quick-input-widget");
     if (commandDialog) {
-      // only Apply blur effect if the Command Palette is visible
+      // Apply the blur effect immediately if the command dialog is visible
       if (commandDialog.style.display !== "none") {
         runMyScript();
       }

@@ -1,4 +1,7 @@
 {
+    "window.autoDetectColorScheme": true,
+    "window.zoomLevel": 0,
+    "editor.mouseWheelZoom": false,
     "editor.wordWrap": "off",
     "editor.wordWrapColumn": 250000,
     "editor.scrollbar.horizontal": "hidden",
@@ -8,49 +11,116 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "block",
-    "editor.fontFamily": "Zed Mono",
-    "editor.fontWeight": "800",
-    "editor.fontSize": 14,
+    // "explorer.decorations.colors": false,
+    // "explorer.decorations.badges": false,
+    // "explorer.expandArrows": false,
+    "editor.fontFamily": "JetBrains Mono",
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#7e857c65",
+        "tree.inactiveIndentGuidesStroke": "#7e857c06"
+    },
+    // "editor.fontFamily": "dank mono",
+    "editor.fontWeight": "500",
+    "editor.fontSize": 13,
     "editor.fontLigatures": true,
+    // "editor.snippetSuggestions": "none"
+    "editor.inlayHints.enabled": "on",
     "diffEditor.renderSideBySide": false,
     "editor.gotoLocation.multipleReferences": "goto",
     "editor.gotoLocation.multipleDefinitions": "goto",
     "editor.gotoLocation.multipleDeclarations": "goto",
     "editor.gotoLocation.multipleImplementations": "goto",
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
-    // When I accidentally hit copy without selecting anything and it overrides my clipboard - ugh.
-    "editor.emptySelectionClipboard": false, 
-
-    // Give it to me as fast as you have it.
-    "editor.quickSuggestionsDelay": 0, 
-
-    // In sublime I got used to almost exclusively using "cmd+shift+v" (format on paste) - now it will do it by default!
-    "editor.formatOnPaste": true, 
+    "editor.emptySelectionClipboard": false, // When I accidentally hit copy without selecting anything and it overrides my clipboard - ugh.
+    "editor.quickSuggestionsDelay": 0, // Give it to me as fast as you have it.
+    "editor.formatOnPaste": true, // In sublime I got used to almost exclusively using "cmd+shift+v" (format on paste) - now it will do it by default!
     "disableLigatures.mode": "Cursor",
-    "editor.lineHeight": 1.8,
+    "editor.lineHeight": 1.6,
+    "terminal.integrated.lineHeight": 1.5,
+    // "breadcrumbs.enabled": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.guides.highlightActiveIndentation": true,
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.bracketPairColorization.enabled": true,
+    // "editor.guides.bracketPairs": true,
     "security.workspace.trust.untrustedFiles": "open",
     "extensions.ignoreRecommendations": true,
     "editor.minimap.renderCharacters": false,
     "editor.minimap.scale": 1,
     "editor.minimap.maxColumn": 80,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "last",
-    "breadcrumbs.showArrays": false,
-    "breadcrumbs.showClasses": false,
-    "breadcrumbs.symbolPath": "last",
+    "breadcrumbs.showArrays": true,
+    "breadcrumbs.showClasses": true,
+    "breadcrumbs.symbolPath": "on",
     "breadcrumbs.icons": true,
-    "window.titleBarStyle": "native",
-    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "custom",
+    "window.title": "${rootName} ${dirty}",
     "window.nativeTabs": true,
-    
+    "vscode_custom_css.imports": [
+        "file:///Users/godswill_azubike/custom-vscode.css",
+        "file:///Users/godswill_azubike/custom-vscode.js",
+        "file:///Users/godswill_azubike/.vscode/extensions/bahman.vsxcode-themes-3.0.0/dist/widgets.min.css"
+    ],
+    // vs spelling dictionary
+    "cSpell.userWords": [
+        "ARGB",
+        "asaba",
+        "autofocus",
+        "Autovalidate",
+        "Azubike",
+        "britonkay",
+        "cardable",
+        "cloudinary",
+        "codicon",
+        "Cupertino",
+        "custome",
+        "Dispatchable",
+        "Filepond",
+        "flowbite",
+        "flushbar",
+        "fullscreen",
+        "Godswill",
+        "GYGITAL",
+        "iconsax",
+        "isax",
+        "jetbrains",
+        "jetbrainsicons",
+        "laravel",
+        "Livewire",
+        "LTRB",
+        "Mailables",
+        "microtask",
+        "ndialog",
+        "Ogiriki",
+        "Onboarded",
+        "Ozoro",
+        "paystack",
+        "Queueable",
+        "Raiting",
+        "shortlet",
+        "signup",
+        "Spatie",
+        "stylesheet",
+        "tailwindcss",
+        "Tauri",
+        "Topup",
+        "ucfirst",
+        "unfocus",
+        "vite",
+        "vsync",
+        "Zoomable"
+    ],
     "dart.lineLength": 200,
     "[dart]": {
         "editor.rulers": [
             200
         ],
         "editor.formatOnSave": true,
-        "editor.formatOnType": true,
+        // "editor.formatOnType": true,
+        "editor.defaultFormatter": "Dart-Code.dart-code",
         "editor.codeActionsOnSave": {
             "source.fixAll": "explicit",
             "source.organizeImports": "explicit"
@@ -59,7 +129,8 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": "off"
+        "editor.wordBasedSuggestions": "off",
+        //   "editor.tabSize": 2
     },
     "tailwindCSS.includeLanguages": {
         "plaintext": "html"
@@ -70,30 +141,17 @@
     // "css.validate": false,
     "editor.inlineSuggest.enabled": true,
     "editor.accessibilitySupport": "auto",
-
-    /*
-    * configure my custome vscode css and js
-    */
-    "vscode_custom_css.imports": [
-        "file:///Users/godswill_azubike/custom-vscode.css",
-        "file:///Users/godswill_azubike/custom-vscode.js"
-    ],
-
-    /*
-    * configure settings cycle
-    * extension to toggle between line numbers, status bar, 
-    */
     "settings.cycle": [
         {
             "id": "lineNumbers",
             "values": [
                 {
                     "editor.lineNumbers": "off",
-                    "editor.folding": false
+                    // "editor.folding": false
                 },
                 {
                     "editor.lineNumbers": "on",
-                    "editor.folding": true
+                    // "editor.folding": true
                 }
             ]
         },
@@ -101,15 +159,15 @@
             "id": "statusBar",
             "values": [
                 {
-                    "workbench.statusBar.visible": false
+                    "workbench.statusBar.visible": false,
                 },
                 {
-                    "workbench.statusBar.visible": true
+                    "workbench.statusBar.visible": true,
                 }
             ]
         }
     ],
-    "editor.folding": false,
+    "editor.folding": true,
     "editor.stickyScroll.enabled": false,
     "workbench.editorAssociations": {
         "*.sqlite": "default",
@@ -119,7 +177,7 @@
     },
     "git.autofetch": true,
     "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -131,8 +189,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
     },
+    // "git.openRepositoryInParentFolders": "never",
+    // "explorer.compactFolders": false,
     "editor.stickyScroll.scrollWithEditor": false,
     "editor.stickyScroll.maxLineCount": 1,
     "workbench.tree.stickyScrollMaxItemCount": 1,
@@ -144,15 +204,18 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "terminal.integrated.inheritEnv": true,
+    "php.validate.executablePath": "/Users/godswill_azubike/Library/Application Support/Herd/bin/php",
+    "laravel.phpPath": "/Users/godswill_azubike/Library/Application Support/Herd/bin/php",
     "workbench.statusBar.visible": true,
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.fontFamily": "Zed Mono",
-    "terminal.integrated.mouseWheelZoom": true,
-    "editor.guides.indentation": true,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.mouseWheelZoom": false,
+    "editor.guides.indentation": false,
     "cSpell.enableFiletypes": [
         "dart"
     ],
@@ -161,8 +224,7 @@
     "editor.renderLineHighlight": "none",
     "dart.hotReloadOnSave": "all",
     "dart.flutterHotReloadOnSave": "all",
-    "editor.lineNumbers": "off",
-    "workbench.activityBar.location": "hidden",
+    "editor.lineNumbers": "on",
     "workbench.sideBar.location": "right",
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
@@ -177,7 +239,13 @@
         "psalm.xml": "psalm-baseline.xml",
         ".php-cs-fixer.php": ".php-cs-fixer.cache",
         "phpunit.xml": ".phpunit.result.cache",
-        "*.php": "${basename}Test.php"
+        "*.php": "${basename}Test.php",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
     },
     "emmet.includeLanguages": {
         "blade.php": "html",
@@ -199,9 +267,65 @@
         ".phpstorm.meta.php": true,
         ".phpunit.result.cache": true
     },
-    "Devdb.colorTheme": "dark",
-    "workbench.editor.showTabs": "none",
     "codeium.enableCodeLens": false,
-    "workbench.colorTheme": "Nord",
-    "editor.minimap.enabled": false
+    "zenMode.showTabs": "none",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "security.promptForLocalFileProtocolHandling": false,
+    "workbench.editor.enablePreview": false,
+    "laravel-pint.enable": true,
+    // "editor.formatOnSave": true,
+    "intelliphp.inlineSuggestionsEnabled": true,
+    "php.format.rules.openBraceOnNewLineForNamespaces": false,
+    "workbench.colorTheme": "VSXCode - Dark Modern",
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.previewFlutterUiGuides": true,
+    "Devdb.enableCodeLensForTextSelection": false,
+    "Devdb.enableMcpServer": false,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/var/folders/tn/r08fpdcx5p9gknxtp69kpgqm0000gp/T/postman-http-request-post-response.instructions.md": true,
+        "/var/folders/tn/r08fpdcx5p9gknxtp69kpgqm0000gp/T/postman-http-request-pre-request.instructions.md": true,
+        "/var/folders/tn/r08fpdcx5p9gknxtp69kpgqm0000gp/T/postman-collections-post-response.instructions.md": true,
+        "/var/folders/tn/r08fpdcx5p9gknxtp69kpgqm0000gp/T/postman-collections-pre-request.instructions.md": true,
+        "/var/folders/tn/r08fpdcx5p9gknxtp69kpgqm0000gp/T/postman-folder-post-response.instructions.md": true,
+        "/var/folders/tn/r08fpdcx5p9gknxtp69kpgqm0000gp/T/postman-folder-pre-request.instructions.md": true
+    },
+    // "workbench.preferredLightColorTheme": "Atom One Light",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "underline",
+    "postman.mcp.notifications.postmanMCP": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "dart": false
+    },
+    "workbench.iconTheme": "jetbrains-file-icon-theme-auto",
+    "workbench.editor.showTabs": "single",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "chat.tools.terminal.autoApprove": {
+        "php": true
+    },
+    "Devdb.phpExecutablePath": "/Users/godswill_azubike/Library/Application Support/Herd/bin//php",
+    "Devdb.showFewerUpdateNotificationActions": true,
+    "explorer.confirmDelete": false,
+    "geminicodeassist.project": "promising-voice-wzftk",
+    "geminicodeassist.displayInlineContextHint": false,
+    "php.problems.exclude": {
+        "**/*": [
+            "PHP6616"
+        ]
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "everforest.darkContrast": "hard",
+    "everforest.darkWorkbench": "flat",
+    "editor.minimap.enabled": false,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "never",
+    "http.systemCertificatesNode": true,
+    "claudeCode.preferredLocation": "panel",
 }

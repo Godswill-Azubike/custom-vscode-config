@@ -1,4 +1,38 @@
+/* custom background noise */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 60;
+  /* z-index: -1; */
+  pointer-events: none !important;
+  opacity: 0.3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.5' numOctaves='7' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  mix-blend-mode: multiply;
+}
 
+
+/* Code comment style */
+.mtk3 {
+  font-family: "Zed Mono", monospace !important;
+  /* font-style: italic !important; */
+  /* color: #008c7d !important; */
+}
+
+/* .line-numbers {
+  margin-left: -25px !important;
+  width: 35px !important;
+} */
+
+/* Code canvas top shadow */
+.monaco-editor .scroll-decoration {
+  box-shadow: none !important;
+  top: -6px !important;
+}
 
 /* File Explorer Item Label */
 .monaco-tree .monaco-tree-row .label-name,
@@ -7,30 +41,18 @@
   font-weight: 200 !important;
 }
 
-/* Sidebar top shadow 
-* I don't know why this is necessary but i just don't like shadows in top of the sidebar
-*/
+/* Sidebar top shadow */
 .monaco-scrollable-element > .shadow.top {
   box-shadow: none !important;
   top: -3px !important;
 }
-
-/* Code canvas top shadow */
-.monaco-editor .scroll-decoration {
-  box-shadow: none !important;
-  top: -6px !important;
-}
-
 
 .codicon-toolbar-more,
 .codicon-word-wrap {
   display: block !important;
 }
 
-/* Command Palette 
-* this is where i position the command palette
-* or any other modal window to the middle of the screen
-*/
+/* Command Palette */
 .quick-input-widget {
   top: 20% !important;
   padding: 10px 10px 18px 10px !important;
@@ -43,10 +65,7 @@
   border-radius: 10px;
 }
 
-/* Command palette text input 
-* here is the input box thea you find in the command palette
-* or any other modal window
-*/
+/* Command palette text input */
 .quick-input-filter .monaco-inputbox {
   border-radius: 8px !important;
   padding: 8px !important;
@@ -55,10 +74,7 @@
   margin-bottom: 16px !important;
 }
 
-/* Command palette backdrop 
-* here contain the blur effect you see on the command palette
-* and other modal windows you see
-*/
+/* Command palette backdrop */
 #command-blur {
     position: absolute;
     width: 100%;
@@ -72,11 +88,4 @@
 /* Command palette's input box placeholder. */
 .monaco-inputbox input::placeholder {
     color: rgba(255, 255, 255, .3) !important;
-}
-
-/* Code comment style */
-.mtk3 {
-  font-family: "Zed Mono", monospace !important;
-  font-style: italic !important;
-  color: #008c7d !important;
 }
